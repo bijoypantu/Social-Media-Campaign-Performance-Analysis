@@ -1,23 +1,19 @@
-<div align="center">
+# 📱 Social Media Campaign Performance Analysis
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,28&height=220&section=header&text=📱%20Social%20Media%20Campaign&fontSize=42&fontColor=ffffff&fontAlignY=35&desc=Performance%20Analysis%20%7C%20SQL%20%2B%20Tableau&descSize=20&descAlignY=55&animation=fadeIn" width="100%"/>
-
-<br/>
+> Analyzed synthetic social media campaign data to evaluate platform and campaign performance — built with SQL and Tableau.
 
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Completed-27AE60?style=for-the-badge)
 ![RWFD](https://img.shields.io/badge/Challenge-RWFD%20S04D01-e6377a?style=for-the-badge)
 
-</div>
-
 ---
 
 ## 📌 Project Overview
 
-This project analyzes **synthetic social media campaign data** to evaluate platform and campaign performance across key metrics — reach, engagement, conversions, cost, and revenue. The goal is to identify which platforms and campaigns deliver the best ROI, and what factors drive performance.
+This project analyzes **synthetic social media campaign data** to evaluate platform and campaign performance across reach, engagement, conversions, cost, and revenue. The goal is to identify which platforms and campaigns deliver the best ROI, and what factors drive performance.
 
-The analysis was completed as part of the **Real World Fake Data (RWFD) S04D01** challenge, and the final Tableau dashboard is published on Tableau Public.
+Completed as part of the **Real World Fake Data (RWFD) S04D01** challenge.
 
 ---
 
@@ -44,11 +40,11 @@ Social-Media-Campaign-Performance-Analysis/
 
 ## 🎯 Objectives
 
-- 📊 Evaluate **platform performance** across reach, engagement, conversions & revenue
-- 💰 Calculate key KPIs — **Conversion Rate, CTR, CPC, and ROI** — at campaign & platform level
-- 🔍 Compare **spend vs. revenue** to identify the most ROI-efficient platforms
-- 🧩 Analyze performance drivers — **audience mix, boosted content & sentiment correlation**
-- 📈 Build a clean, interactive **Tableau dashboard** for business stakeholders
+- Evaluate **platform performance** across reach, engagement, conversions & revenue
+- Calculate key KPIs — **Conversion Rate, CTR, CPC, and ROI** — at campaign & platform level
+- Compare **spend vs. revenue** to identify the most ROI-efficient platforms
+- Analyze performance drivers — **audience mix, boosted content & sentiment correlation**
+- Build a clean, interactive **Tableau dashboard** for business stakeholders
 
 ---
 
@@ -64,12 +60,12 @@ Social-Media-Campaign-Performance-Analysis/
 ## 🔍 Methodology
 
 ### 1️⃣ Data Cleaning & Validation (SQL)
-- Cleaned and validated synthetic social media campaign dataset
-- Handled nulls, duplicates, and standardized categorical fields (platform names, campaign types)
+- Cleaned and validated the synthetic dataset
+- Handled nulls, duplicates, and standardized categorical fields
 - Ensured data integrity before KPI computation
 
 ### 2️⃣ KPI Computation (SQL)
-Calculated the following metrics at both **campaign level** and **platform level**:
+Calculated the following at both **campaign level** and **platform level**:
 
 | KPI | Formula |
 |:----|:--------|
@@ -80,14 +76,12 @@ Calculated the following metrics at both **campaign level** and **platform level
 
 ### 3️⃣ Tableau Dashboard
 Built a two-page interactive dashboard:
-- **Overview** — High-level performance across platforms and campaigns
-- **Performance Drivers** — Deep-dive into audience mix, boosted content, and sentiment correlation
+- **Overview** — High-level platform and campaign performance
+- **Performance Drivers** — Deep-dive into audience mix, boosted content & sentiment correlation
 
 ---
 
 ## 🎨 Dashboard Color Palette
-
-<div align="center">
 
 | Color | Role | Hex |
 |:------|:-----|:----|
@@ -95,8 +89,6 @@ Built a two-page interactive dashboard:
 | 🟢 Green | Positive / Growth | `#43aa8b` |
 | 🔴 Red | Negative / Loss | `#ff6b6b` |
 | 🔵 Teal | Headings / Labels | `#3f9aa8` |
-
-</div>
 
 ---
 
@@ -108,12 +100,14 @@ Built a two-page interactive dashboard:
 ### Performance Drivers
 [![Performance Drivers](https://github.com/bijoypantu/Social-Media-Campaign-Performance-Analysis/raw/main/Icons%20&%20Images/Performance%20Drivers.png?raw=true)](https://public.tableau.com/app/profile/bijoy.pantu/viz/SocialMediaCampaignPerformanceRWFDS04D01/Overview)
 
+🔗 **[Interact with the Live Dashboard →](https://public.tableau.com/app/profile/bijoy.pantu/viz/SocialMediaCampaignPerformanceRWFDS04D01/Overview)**
+
 ---
 
 ## 💡 Key Insights
 
-| 💡 Finding | 📝 Detail |
-|:----------|:---------|
+| Finding | Detail |
+|:--------|:-------|
 | 🏆 Top ROI Platform | Identified the platform returning the highest revenue per dollar spent |
 | 📉 Underperformers | Campaigns with high spend but low conversion rate flagged for review |
 | 🚀 Boosted Content | Boosted posts showed significantly higher CTR vs. organic content |
@@ -135,41 +129,28 @@ Built a two-page interactive dashboard:
 
 **Option 1 — View Live on Tableau Public (Recommended)**
 
-[![View Dashboard](https://img.shields.io/badge/🚀%20View%20Live%20Dashboard-Tableau%20Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/bijoy.pantu/viz/SocialMediaCampaignPerformanceRWFDS04D01/Overview)
+🔗 [Social Media Campaign Performance Dashboard](https://public.tableau.com/app/profile/bijoy.pantu/viz/SocialMediaCampaignPerformanceRWFDS04D01/Overview)
 
 **Option 2 — Open Locally in Tableau Desktop**
 ```
 1. Clone or download this repository
-2. Open  dashboard/Social_Media_Campaign_Performance.twbx  in Tableau Desktop
+2. Open dashboard/Social_Media_Campaign_Performance.twbx in Tableau Desktop
 3. Explore the interactive dashboard locally
 ```
 
 **Option 3 — Reproduce the Analysis via SQL**
 ```
-1. Load data/raw/  into your SQL environment (MySQL / PostgreSQL)
-2. Run sql/  scripts in order — cleaning first, then KPI calculation
-3. Cleaned output will match  data/cleaned/
+1. Load data/raw/ into your SQL environment (MySQL / PostgreSQL)
+2. Run sql/ scripts in order — cleaning first, then KPI calculation
+3. Cleaned output will match data/cleaned/
 ```
 
 ---
 
 ## 📬 Connect With Me
 
-<div align="center">
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bijoy%20Pantu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoypantu/)
 [![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/bijoy.pantu/vizzes)
-[![GitHub](https://img.shields.io/badge/GitHub-bijoypantu-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bijoypantu)
 [![Gmail](https://img.shields.io/badge/Gmail-bijoypantu176-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bijoypantu176@gmail.com)
 
-</div>
-
 ---
-
-<div align="center">
-
-*"Data beats opinions. ROI beats assumptions."* 📊
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,28&height=120&section=footer" width="100%"/>
-
-</div>
